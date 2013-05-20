@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="skin.confluence"
-  version="2.1.5"
-  name="Confluence"
+  id="skin.confluenceHMod"
+ version="2.1.5"
+  name="ConfluenceHMod"
   provider-name="Jezz_X, Team XBMC">
   <requires>
     <import addon="xbmc.gui" version="4.0.0"/>

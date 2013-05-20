@@ -1,4 +1,26 @@
 <includes>
+	<include name="HomeSubMenuAnimes">
+		<control type="image" id="90181">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90182">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>Films</label>
+			<onclick>ActivateWindow(10025,"special://profile/playlists/video/Dessins-Animes.xsp", return)</onclick>
+		</control>
+		<control type="button" id="90183">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>Series</label>
+			<onclick>ActivateWindow(10025,"special://profile/playlists/video/Dessins-Animes-series.xsp", return)</onclick>
+		</control>
+		<control type="image" id="90184">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
 	<include name="HomeSubMenuVideos">
 		<control type="image" id="90101">
 			<width>35</width>
@@ -17,6 +39,24 @@
 			<onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
 			<visible>Library.HasContent(TVShows) + Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
 		</control>
+		<!--Docus, Spectacles, Concerts, -->
+		<control type="button" id="90109">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>Documentaires</label>
+			<onclick>ActivateWindow(10025,"special://profile/playlists/video/Documentaires.xsp", return)</onclick>
+		</control>
+		<control type="button" id="90110">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>Spectacles</label>
+			<onclick>ActivateWindow(10025,"special://profile/playlists/video/Spectacles.xsp", return)</onclick>
+		</control>
+		<control type="button" id="90111">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>Concerts</label>
+			<onclick>ActivateWindow(10025,"special://profile/playlists/video/Concerts.xsp", return)</onclick>
+			<icon>special://skin/backgrounds/concert.jpg</icon>
+		</control>
+		<!-- -->
 		<control type="button" id="90104">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>20389</label>

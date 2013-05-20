@@ -787,6 +787,15 @@
 					<visible>Container(9000).HasFocus(4)</visible>
 					<include>HomeSubMenuPictures</include> <!-- Buttons for the grouplist -->
 				</control>
+				<!-- SS menu dessin animes -->
+				<control type="grouplist" id="9015">
+					<include>HomeSubMenuCommonValues</include>
+					<onleft>9015</onleft>
+					<onright>9015</onright>
+					<visible>Container(9000).HasFocus(99)</visible>
+					<include>HomeSubMenuAnimes</include> <!-- Buttons for the grouplist -->
+				</control>
+				<!-- -->
 			</control>
 			<control type="image">
 				<posx>-100</posx>
@@ -928,7 +937,16 @@
 						<thumb>-</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
 					</item>
-					<item id="3">
+					<!-- Dessins animes -->
+					<item id="99">
+						<label>Dessins Animés</label>
+						<onclick>ActivateWindow(10025,"special://profile/playlists/video/Dessins-Animes.xsp", return)</onclick>
+						<icon>special://skin/backgrounds/walle.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
+						<visible>Skin.HasSetting(HomeMenuNoMoviesButton) + Library.HasContent(Movies)</visible>
+					</item>
+					<!-- -->
+<item id="3">
 						<label>2</label>
 						<onclick>ActivateWindow(Music)</onclick>
 						<icon>-</icon>
